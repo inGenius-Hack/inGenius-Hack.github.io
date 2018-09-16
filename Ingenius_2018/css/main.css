@@ -119,7 +119,7 @@
 }
 
 .hdr h1{
-    text-transform: lowercase;
+   /* text-transform: lowercase; */
     color:white;
     
 
