@@ -156,6 +156,22 @@
   clear: both; 
   
 }
+.footer-bot{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer-bot a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-bot a:hover{
+  color: aqua;
+  text-decoration: none;
+}
 
 
 .social-links span{
