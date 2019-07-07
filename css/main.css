@@ -562,3 +562,14 @@ box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.56);
 .green-button{
 	background-color: #2d9687;
 }
+
+.gg_head {
+	color:#FFF165;
+	font-size : 20px;
+}
+.gg_p {
+	font-size : 16px;
+	margin : 0px;
+	margin-bottom : 10px;
+	padding: 0px;
+}
