@@ -147,17 +147,17 @@ svg text{
 }
 
 .part-icon-cont{
-	color:#fff; 
-	position: absolute; 
-	left:0; 
+	color:#fff;
+	position: absolute;
+	left:0;
 	top: 80px;
 	width:100%;
 	font-size:38px !important;
 }
 #lc-6-icon-cont{
-	color:#fff; 
-	position: absolute; 
-	left:0; 
+	color:#fff;
+	position: absolute;
+	left:0;
 	top: 70px;
 	width:100%;
 	font-size:38px !important;
@@ -348,7 +348,7 @@ clip-path: polygon(0% 15%, 12% 10%, 15% 0%, 85% 0%, 89% 11%, 100% 15%, 100% 85%,
 	display: none;
 	background-color: #2d9687;
 	opacity: 0.7;
-	
+
 
 }
 .image-container span{
@@ -379,7 +379,7 @@ clip-path: polygon(0% 15%, 12% 10%, 15% 0%, 85% 0%, 89% 11%, 100% 15%, 100% 85%,
 .speaker-container{
 	padding:20px 20px !important;
 	/*height: 100% !important;*/
-	
+
 background: transparent;
 }
 
@@ -399,14 +399,14 @@ box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.56);
 	width: 100%;
 	background: transparent;
 }
-.view-details{	
+.view-details{
 	background:#fff;
 	color:rgb(230, 43, 30) !important;
 	text-decoration: none;
 	position:absolute;
 	top:112px;
 	left:50%;
-	margin-left:-85px;	
+	margin-left:-85px;
 	border:2px solid #fff;
 	color:#fff;
 	font-size:19px;
@@ -414,14 +414,14 @@ box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.56);
 	text-transform:uppercase;
 	font-weight:700;
 	padding:10px 0;
-	width:172px;	
+	width:172px;
 	opacity:0;
-	-webkit-transition: all 200ms ease-out; 
-       -moz-transition: all 200ms ease-out; 
-         -o-transition: all 200ms ease-out; 
-            transition: all 200ms ease-out; 
+	-webkit-transition: all 200ms ease-out;
+       -moz-transition: all 200ms ease-out;
+         -o-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;
 }
-.view-details:hover{	
+.view-details:hover{
 	background:#fff;
 	color:#48cfad !important;
 	cursor:pointer;
@@ -434,10 +434,10 @@ box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.56);
 	font-size:15px;
 	margin-left:-75px;
 	top:115px;
-	-webkit-transition: all 200ms ease-out; 
-       -moz-transition: all 200ms ease-out; 
-         -o-transition: all 200ms ease-out; 
-            transition: all 200ms ease-out; 		
+	-webkit-transition: all 200ms ease-out;
+       -moz-transition: all 200ms ease-out;
+         -o-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;
 }
 
 .stats-container{
@@ -549,7 +549,7 @@ box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.56);
 
 .social-links span{
 	font-size: 32px;
-	margin : 0px 20px; 
+	margin : 0px 20px;
 	color: #fff !important;
 }
 .made-with{
@@ -572,4 +572,40 @@ box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.56);
 	margin : 0px;
 	margin-bottom : 10px;
 	padding: 0px;
+}
+#IEEEGirlGeeksHack{
+	font-size: 25px;
+}
+#inGenius{
+	font-size: 25px;
+	text-transform: capitalize;
+}
+
+
+#homebutton{
+	font-size: 20px;
+	float: right;
+}
+#IEEEGirlGeeksHack{
+	font-size: 25px;
+	text-transform: capitalize;
+}
+div.vertical-line {
+  /*width: 1px; /* Line width */
+  /*background-color: rgb(255, 255, 255); /* Line color */
+  /*height: 100%; /* Override in-line if you want specific height. */
+  /*margin-left: auto;
+  margin-right: auto;*/
+	border:solid #fff; 1px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
