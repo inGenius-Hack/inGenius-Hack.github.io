@@ -1,0 +1,15 @@
+.logo-grid,
+.tag-grid {
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+div.vertical-line {
+  width: 1px; /* Line width */
+  background-color: rgb(255, 255, 255); /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  margin-left: auto;
+  margin-right: auto;
+}

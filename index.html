@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="inGenius, the flagship event of PESITSouth IEEE Computer Society, is an annual 24-hour hackathon. After six successful iterations, inGenius 2018 is back! This time around, our theme is Open Hack. The future is data-driven. So get behind the wheel & hack it out on the 3rd & 4th of November, 2018.">
 	<meta name="author" content="#getSetHack">
-	<title>inGenius 2019</title>
-
+    <title>inGenius 2019</title>
+    
+    <link href="css/new.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -24,6 +25,32 @@
 
 <!-- jQuery is required -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
@@ -73,15 +100,33 @@
     <section id="home" class="section active" style="width: 100%; min-height: 100vh;">
             
 	<div class="col-md-6 col-md-offset-3 text-center" id="logo-area">
+        <div class=logo-grid>
+            <div class="logo-item">
+                <center>
+                    <a href="#ingenius"><img class="img img-responsive" style="max-height:180px;" src="images/logo.png"></a>
+                </center>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="logo-item">
+                <center>
+                    <a href="#girlgeeks"><img class="img img-responsive" style="max-height: 150px" src="images/gg_logo.png"></a>
+                    
+                </center>
+            </div>
+            <div class="logo-item">
+                    <center>
+                        <p style="font-size: 42px; font-weight: 800; padding-top: 20px ; padding-bottom: 20px;">#get<span style="color:#28A8E0">Set</span>Hack</p>
+                    </center>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="logo-item">
+                    <center>
+                        <p style="font-size: 42px; font-weight: 800; padding-top: 20px ; padding-bottom: 20px;">#girl<span style="color:rgb(108, 241, 95)">Geeks</span>Hack</p>
+                    </center>
+                </div>
+         </div>
+
         
-		<center>
-            <img class="img img-responsive" style="max-height:180px;" src="images/logo.png">
-            <img class="img img-responsive" style="max-height: 150px" src="images/gg_logo.png">
-            <button type="button" onclick="window.location.href ='./index2.html';" class="btn btn-outline-success" style=" background:none ; border-color: rgb(108, 241, 95); margin-top: 20px; width: 30% ;;">
-                    <a class="btn btn-outline-success" style="color:rgb(108, 241, 95); ">girlGeeksHack</a>
-                </button>
-		</center>
-        <p style="font-size: 42px; font-weight: 800; padding-top: 80px;">#get<span style="color:#28A8E0">Set</span>Hack</p>
         <!-- <h2 style="color : #fff;"> <span style="font-weight: bold">#getSetHack</strong></h2> -->
 	</div>
 	<div id = "dot-nav" class="uk-position-center-right uk-position-medium" style="position: fixed !important; z-index: +1;">
@@ -175,7 +220,7 @@
             <div class="col-sm-12">
                 <div class="row container">
                     <div class="col-md-6 uk-padding-large uk-padding-remove-vertical main-content">
-                        <p style="color:#2d9687;">
+                    
                             <ul>
                                 <li class="gg_li">
                                     <strong class="gg_head">Objective</strong>
@@ -208,7 +253,7 @@
                             </ul>
                             
                             <!-- So get behind the wheel &amp; hack it out on the 3rd &amp; 4th of November, 2018. -->
-                        </p>
+                    
                         <!-- <p class="text-center">
                             <a href="brochure.pdf"ˀ style="color: #2d9687;" class="uk-button uk-button-default uk-button-large uk-margin-medium uk-margin-remove-bottom" target="_blank">Brochure</a>
                         </p> -->
@@ -697,15 +742,12 @@ Thank you for your consideration and help in making inGenius 2018 a welcoming, f
 
     <section id="venue" style="min-height: 100vh;" class="section uk-padding-large">
         <div class="container">
-        <div class="row">
+            <div class="row">
 
-            <div class="col-sm-8 col-sm-offset-2">
-                <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwb4iy7xsrjsRdl79p7cwrUs&key=AIzaSyDpCzZMqCELL53PLmHZ57-jAH8NGnZ8jPA" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwb4iy7xsrjsRdl79p7cwrUs&key=AIzaSyDpCzZMqCELL53PLmHZ57-jAH8NGnZ8jPA" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-
-        </div>
-
         </div>
     </section>
 
@@ -1006,6 +1048,7 @@ We intend to use muscle sensor and ultrasound probe."</p>
 
 <!-- </script> -->
 	<script src="js/classie.js"></script>
-	<script src="js/svganimations2.js"></script>
+    <script src="js/svganimations2.js"></script>
+    <script src="js/new.js"></script>
 </body>
 </html>
