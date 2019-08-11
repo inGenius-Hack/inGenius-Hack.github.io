@@ -609,3 +609,6 @@ div.vertical-line {
 .capitalize {
   text-transform: capitalize;
 }
+#home{
+	height:100%;
+}
