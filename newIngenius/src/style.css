@@ -222,18 +222,13 @@ body, html {
     margin: 15px 15px 15px 15px;
   }
 
-  .user-ggeek {
-    width: 80%;
-    max-width: 300px;
+  .dev-ggeek {
     position: relative;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 70px;
   }
   
   .dev-ing {
-    margin-top: 25px;
-    width: 50%;
-    height: 50%;
+    margin-top: 20px;
     margin-top: 100px;
     position: relative; 
   }
