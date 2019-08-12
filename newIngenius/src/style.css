@@ -181,6 +181,7 @@ body, html {
   position: relative;
   margin-top: 20%;
   margin-left: 7%;
+  margin-bottom: 100px;
   /* transition: all 2s ease; */
 }
 
@@ -196,11 +197,6 @@ body, html {
   color: white;
 }
 
-.dev-coc {
-  margin-top: 10px;
-  margin-bottom: 80px;
-  margin-left: 5%;
-}
 
 @media only screen and (min-width: 1080px){
   body {
@@ -237,15 +233,6 @@ body, html {
     color: white;
   }
 
-  .dev-coc {
-    margin-left: 8%;
-  }
-
-  .dev-details{
-    position: relative;
-    /* margin-top: 130px; */
-    margin-left: 10%;
-  }
 
   .dev-comsoc, .dev-ieee {
     width: 100%;
