@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="#getSetHack">
+	<title>Code of Conduct</title>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" /> -->
+
+
+  	<link rel="shortcut icon" href="images/favicon.png">
+
+  	<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+   <link rel ='stylesheet' href = 'css/animate.css'>
+   <link rel ='stylesheet' href = 'css/font-awesome.min.css'>
+
+
+
+<!-- jQuery is required -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".uk-dotnav" data-offset="50">
+
+
+<div id="menu-icon" style="position: fixed; top:10px; right:10px; z-index: 1001 !important;"  uk-toggle="target: #offcanvas-nav-primary">
+
+</div>
+<!-- <button class="uk-button uk-button-default uk-margin-small-right" type="button">Primary Nav</button> -->
+
+	<div class="uk-offcanvas-content">
+    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: false; flip: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column" style="background-color: #000; width:100vw; z-index: -1; letter-spacing: 2px; font-size : 32px;">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-scrollspy-nav="closest: li; scroll: true">
+                <li class="uk-active"><a href="#home" uk-scroll>Home</a></li>
+                <!--<li><a href="#ingenius" uk-scroll>inGenius</a></li>
+                <li><a href="#girlgeeks" uk-scroll>GirlGeeks</a></li>
+                <li><a href="#participate" uk-scroll>Participate</a></li>
+                <li><a href="#register" uk-scroll>Register</a></li>
+                <li><a href="#faq" uk-scroll>FAQ</a></li>-->
+                <li><a href="#IEEE" uk-scroll>IEEE CompSoc</a></li>
+                <!-- <li><a href="#sponsors" uk-scroll>Sponsors</a></li> -->
+                <li><a href="#CodeOfConduct" uk-scroll>CodeOfConduct</a></li>
+                <li><a href="#contactus" uk-scroll>Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".uk-nav-primary li").click(function(){
+                UIkit.offcanvas("#offcanvas-nav-primary").hide();
+            });
+        });
+    </script>
+
+</div>
+
+<div id="particles-js"></div>
+
+    <!-- <div id="fullpage"> -->
+    
+        
+	<div id = "dot-nav" class="uk-position-center-right uk-position-medium" style="position: fixed !important; z-index: +1;">
+        <ul class="uk-dotnav uk-dotnav-vertical" uk-scrollspy-nav="closest: li; scroll: true; offset: 30">
+            <li class="uk-active" title="Home" uk-tooltip="pos: left"><a href="#home" uk-scroll>Item 1</a></li>
+            <!--<li title="inGenius" uk-tooltip="pos: left"><a href="#ingenius" uk-scroll>Item 3</a></li>
+            <li title="girlgeeks" uk-tooltip="pos: left"><a href="#girlgeeks" uk-scroll>Item 5</a></li>
+            <li title="Participate" uk-tooltip="pos: left"><a href="#participate" uk-scroll>Item 4</a></li>
+            <li title="Register" uk-tooltip="pos: left"><a href="#register" uk-scroll>Item 5</a></li>
+            <li title="FAQ" uk-tooltip="pos: left"><a href="#faq" uk-scroll>Item 5</a></li>-->
+						<li title="IEEE Compsoc" uk-tooltip="pos: left"><a href="#IEEE" uk-scroll>Item 2</a></li>
+            <!-- <li title="Sponsors" uk-tooltip="pos: left"><a href="#sponsors" uk-scroll>Item 2</a></li> -->
+            <li title="CodeOfConduct" uk-tooltip="pos: left"><a href="#CodeOfConduct">Item 5</a></li>
+            <li title="Contact Us" uk-tooltip="pos: left"><a href="#contactus">Item12123123</a></li>
+        </ul>
+    </div>
+    </section>
+
+
+
+    <div class="bulblogo hidden" style="position: fixed; top: 10px; left: 15px; z-index: 999;"> <a href="#home" uk-scroll><img class="img img-responsive" style="height:60px;" src="images/bulb.png"></a></div>
+
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          var scrollPos = $(window).scrollTop();
+          if(scrollPos >= 600){
+            $(".bulblogo").addClass("large-nav").promise().done(function(){
+              $(".bulblogo").removeClass("hidden").addClass("fadeInLeft animated");
+            });
+          }else if(scrollPos <= 500){
+            $(".bulblogo").removeClass("large-nav").promise().done(function(){
+              $(".bulblogo").removeClass("fadeInLeft").addClass("fadeOutLeft").promise().done(function(){
+                $(".bulblogo").removeClass("fadeOutLeft").addClass("hidden");
+              });
+            });
+          }
+        });
+      });
+    </script>
+
+    <section id="CodeOfConduct" uk-scrollspy="cls:uk-animation-fade;repeat:true;" style="width: 100%; min-height: 100vh;" class="section uk-padding-large uk-padding-remove-vertical">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12 uk-padding uk-padding-remove-bottom">
+                <h3 style="color:#B88FC2;" uk-scrollspy="cls:uk-animation-slide-left">&lt;CodeOfConduct&gt;</h3>
+            </div>
+            <div class="col-sm-12">
+                <div class="row container" >
+                    <div class="col-md-6 uk-padding-large uk-padding-remove-vertical pull-left main-content">
+                        <p style="color:#d1f7f9; font-size:18px;">
+                            Organised by the PESIT South IEEE Computer Society, inGenius is our annual inter-college, 24 hour hackathon.<br><br>
+We are a platform for students pursuing their professional degree,to apply knowledge gained in the classroom and prototype meaningful products.<br><br>
+We value the participation of every member and want all attendees to have an enjoyable and rewarding experience. Accordingly, every attendee of the event is expected to show respect and courtesy to every other attendee throughout the event.<br><br>
+To make clear what is expected, all delegates/attendees, speakers, exhibitors, organizers and volunteers at inGenius 2019 are required to conform to the following Code of Conduct. Organizers will enforce this code throughout the event.<br><br>
+inGenius is dedicated to providing a harassment-free experience for everyone, regardless of age, gender, sexual orientation, physical appearance, disability, race, religion or employment. We don't tolerate harassment of attendees in any form.<br><br>
+
+                            <span style="color:#FFF165;">Reporting</span><br>
+                            If you are being harassed, notice that someone else is being harassed, or have any 
+                            other concerns, please contact a conference volunteer or submit an anonumous complaint on the <a href="
+                            https://docs.google.com/forms/d/e/1FAIpQLSfn7rYumiskRv9sRTNgRCJ_expVz0Dwy922OmXiX3r5IsyTzA/viewform" target="_blank"
+                            "> Reporting Form </a>.
+                             Volunteers will be wearing an “inGenius Volunteer" T-Shirt. 
+                            For detailed instructions on reporting of violations and the steps for resolution, please check the Reporting Form.
+                        </p>
+    
+                    </div>
+                    <div class="col-md-5 uk-padding-remove-vertical pull-left main-content">
+                        <p style="color:#d1f7f9; font-size: 18px;">
+                            All communication should be appropriate for a professional audience, including people from many different backgrounds.<br><br>
+<span style="color:#FFF165;">Code for Sponsors:</span><br>
+Sponsors or vendor booths, are subject to the anti-harassment policy.
+Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.<br><br>
+<span style="color:#FFF165;">Code for Judges:</span><br>
+Sexual language or imagery is inappropriate and refrain from using sexist, racist or exclusionary language in your content.<br><br>
+<span style="color:#FFF165;">Code for Participants:</span><br>
+Be kind and sensitive to the people around you and avoid any kind of offensive behavior. Sexist, racist or any other form of exclusionary or offensive jokes or excessive public swearing are not appropriate at the event.<br><br>
+Attendees violating these rules may be asked to leave the event without a refund at the sole discretion of the organizers.<br><br>
+Thank you for your consideration and help in making inGenius 2019 a welcoming, friendly event for all of us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 uk-padding uk-padding-remove-bottom">
+                <h3 style="color:#B88FC2;" uk-scrollspy="cls:uk-animation-slide-left">&lt;/CodeOfConduct&gt;</h3>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center uk-margin-large uk-margin-remove-bottom social-links">
+                    <a href="https://facebook.com/ingeniushack" target="_blank"><span class="fa fa-facebook"></span></a>
+                    <a href="https://twitter.com/ingeniushack" target="_blank"><span class="fa fa-twitter"></span></a>
+                    <a href="https://instagram.com/ingeniushackathon" target="_blank"><span class="fa fa-instagram"></span></a>
+                </div>
+                <div class="col-sm-12 text-center" style="padding-bottom: 10px;">
+                    <span class="made-with">Made with &#x2764; by <a style="color: #fff;" target="_blank" href="http://pesitsouthcompsoc.org/">PESITSouth IEEE Computer Society</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- </div> -->
+
+    <div id="modal-full-1" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/phone.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">ZDRAVO</h1>
+                <p class="hack-modal-by text-center">By :- PESIT Bangalore South Campus</p>
+                <p class="hack-modal-info">We  plan to call our project [a mobile application] "ZDRAVO" (which means "hello" in serbian).  ZDRAVO will integrate calling and texting functionalities by allowing every call you make to get dispatched with a   short message indicating the subject of your call, similar to an email.  This way the receiver of your call knows why you are calling, and can thus decide whether or no accept it.  We plan on  implementing our idea through Android Studio.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-full-2" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/hardware.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">Pregnancy Monitoring Belt</h1>
+                <p class="hack-modal-by text-center">By :- VIT University</p>
+                <p class="hack-modal-info">"Pregnancy monitoring belt which includes a portable tocodyanomometer and umbilical blood flow measurement for the well being of the fetus and the mother.
+We intend to use muscle sensor and ultrasound probe."</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-full-3" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/iot.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">Accidental Prevention &amp; Care</h1>
+                <p class="hack-modal-by text-center">By :- PESIT Bangalore South Campus</p>
+                <p class="hack-modal-info">All we see in the second page of any News paper is about unfortunate incidents,The Accidents. Well we,the young guns of III-CSE, are coming up with amazing features for all four wheelers  which on support with statistical reports, prevent 50% of the accidents. That's the minimum margin we put, as our Arduino based quick responsive systems (lot of math involved), and android map application, taking care of the obstructions caused for the drivers which leads to accidents(glare hitting the eyes when other vehicles zoom in with high beams "on" highways in night), and about the junctions, which are very difficult to spot when you are driving at 45+mph   and none to warn you about the nearest intersection!! Aren't intersections glare, and drowsiness  main reasons for accidents?! We are taking at most care to address each and every aspect.We prevent the glare hitting the the drivers eyes, and keep the vehicles speed in check, mostly at junctions. Its like a 72 hour hackathon for us (24*3). We will also want to take care about the "Care" part of our project. We make sure the emergency wheels reach out soon to the hospitals, using IoT and GPS systems!</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-full-4" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/sportfolio.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">A.I. Commentator</h1>
+                <p class="hack-modal-by text-center">By :- NIT Trichy</p>
+                <p class="hack-modal-info">An A.I. , that automatically produces running commentary when you feed in the live video of a cricket match . This idea can be extremely useful in websites like cricinfo.com , where in people manually type in comments after each ball in the match . This is also used in places where in , a huge amount of data can't be spent to watch the match video .</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-full-5" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/lights.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">Ardor</h1>
+                <p class="hack-modal-by text-center">By :- PESIT Bangalore South Campus</p>
+                <p class="hack-modal-info">Long waiting time at red signal has been a frustrating problem faced by daily commuters in cities all over the country.Motorists spend an equivalent of 8 minutes a day and 2 days a year waiting at red signal. Our software is aimed at providing the average speed that the vehicle should acquire from starting location of journey via every traffic signal on the route till destination in such a way that user passes through every traffic signal without halting at any red signal. It gives the output to the user average speed at which he/she should drive their vehicle,which can be either two/three/four wheeler,so that by the time it reaches the next traffic signal,the red light cycle for that signal has completed and the user faces either green or the orange light so that they can keep moving.  We have data sets for distance between different traffic signals,cycle time for each traffic signal,traffic congestion and locations.  Our structured algorithm will compute the average speed based on many constraints.  The following tools will be used for implementation: Python:Server side scripting. Apache Spark:Advanced analytic application by using data in HDFS(Hadoop Distributed File Management System). Google Map APIs:Extracting information about distances between traffic signals and traffic status.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-full-6" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/web.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">Web Navigation</h1>
+                <p class="hack-modal-by text-center">By :- NIT Trichy</p>
+                <p class="hack-modal-info">WEB NAVIGATION FOR THE VISUALLY IMPAIRED  An interactive web app for assisting blind people to navigate and access web content using speech and gesture recogniton. It uses web scraping and machine learning algorithms to remove clutter from the web page and preserve important content.  It has add-on features like bookmarking URL's and removing content from history .</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-full-7" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/social.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">Pied Piper</h1>
+                <p class="hack-modal-by text-center">By :- PESIT Bangalore South Campus</p>
+                <p class="hack-modal-info">Suggestion of products similar to the liked products on social media by the user. We sentimentally analyse a comment on a picture on social media describing a product. If it is positive, we extract  the product from the image, analyse the product pattern to display similar products. Social Media API(facebook, instagram)  is used  to get the comments and picture. Comments are sentimentally analysed using tools available. Product extraction using image processing algorithm. Classifier to categorize the product. Training data from e-commerce website. Python as language and web application to display. </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-full-8" class="uk-modal-full" uk-modal style="z-index: 1002;">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover modal-background" style="background-image: url('images/barcode.png');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1 class="text-center hack-modal-title">Team Rocket</h1>
+                <p class="hack-modal-by text-center">By :- PESIT Bangalore South Campus</p>
+                <p class="hack-modal-info">According to surveys conducted, a large number of the population feels that there needs to be some reliable method to receive products ordered online when they're not at home. So we came up with a system to safely recieve the product being delivered and dispense the required amount of money (COD Orders).   All you need to do is to input the barcode of the arriving product and put in the required money into the system, and the it takes care of the rest.  Here's how we intend on implementing it.   Upon delivery, the product is scanned for the barcode and is cross verified with the user input barcode. If it's a match, a slot in the door of the customer opens up (a box placed outside for bigger delivery packages).  Once the product has been dropped off, a pressure sensor verifies that the product has been deposited and closes the slot/box. The money dispenser now tenders the exact value of the product and the process is complete.  We use a Raspberry Pi to achieve the above operations.  The user now recieves a message confirming that the product was recieved. We believe this is an efficient and safe way of solving the problem at hand.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/svg.min.js"></script>
+    <script>
+        var menu = SVG('menu-icon').size(60,60);
+        var item = menu.line(0, 10, 50, 10).move(0, 10);
+        item.stroke({ color: '#2d9687', width: 5, linecap: 'round' });
+        var item2 = menu.line(0, 25, 50, 25).move(0, 25);
+        item2.stroke({ color: '#2d9687', width: 5, linecap: 'round' });
+        var item3 = menu.line(0, 40, 50, 40).move(0,40);
+        item3.stroke({ color: '#2d9687', width: 5, linecap: 'round' });
+    </script>
+	<script src="js/particles.js"></script>
+	<script>
+		/* ---- particles.js config ---- */
+
+	particlesJS("particles-js", {
+	  "particles": {
+	    "number": {
+	      "value": 60,
+	      "density": {
+	        "enable": true,
+	        "value_area": 800
+	      }
+	    },
+	    "color": {
+	      "value": "#000000"
+	    },
+	    "shape": {
+	      "type": "circle",
+	      "stroke": {
+	        "width": 1,
+	        "color": "#ffffff"
+	      },
+	      "polygon": {
+	        "nb_sides": 5
+	      }
+	    },
+	    "opacity": {
+	      "value": 0.2,
+	      "random": true,
+	      "anim": {
+	        "enable": false,
+	        "speed": 1,
+	        "opacity_min": 0.1,
+	        "sync": false
+	      }
+	    },
+	    "size": {
+	      "value": 2,
+	      "random": true,
+	      "anim": {
+	        "enable": false,
+	        "speed": 50,
+	        "size_min": 0.1,
+	        "sync": false
+	      }
+	    },
+	    "line_linked": {
+	      "enable": true,
+	      "distance": 60,
+	      "color": "#ffffff",
+	      "opacity": 0.2,
+	      "width": 1
+	    },
+	    "move": {
+	      "enable": true,
+	      "speed": 2,
+	      "direction": "none",
+	      "random": true,
+	      "straight": false,
+	      "out_mode": "out",
+	      "bounce": true,
+	      "attract": {
+	        "enable": false,
+	        "rotateX": 600,
+	        "rotateY": 1200
+	      }
+	    }
+	  },
+	  "interactivity": {
+	    "detect_on": "canvas",
+	    "events": {
+	      "onhover": {
+	        "enable": true,
+	        "mode": "repulse"
+	      },
+	      "onclick": {
+	        "enable": true,
+	        "mode": "push"
+	      },
+	      "resize": true
+	    },
+	    "modes": {
+	      "grab": {
+	        "distance": 200,
+	        "line_linked": {
+	          "opacity": 1
+	        }
+	      },
+	      "bubble": {
+	        "distance": 400,
+	        "size": 40,
+	        "duration": 2,
+	        "opacity": 8,
+	        "speed": 3
+	      },
+	      "repulse": {
+	        "distance": 200,
+	        "duration": 0.4
+	      },
+	      "push": {
+	        "particles_nb": 4
+	      },
+	      "remove": {
+	        "particles_nb": 2
+	      }
+	    }
+	  },
+	  "retina_detect": true
+	});
+	</script>
+
+	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+      //  $("html").niceScroll({
+      //   cursorcolor:"#2d9687",
+      //   cursorwidth:"12px",
+      //   cursorfixedheight : 80,
+      //   cursorborderradius : "10px",
+      //   cursorborder: "1px solid #0A0924",
+      //   scrollspeed : 200,
+      //   mousescrollstep: 200
+      // });
+        // $("body").niceScroll({
+        //     cursorcolor:"rgb(230, 43,30)",
+        //     cursorwidth:"10px",
+        //     cursorborderradius : "1px",
+        //     cursorborder: "1px solid rgb(230, 43, 30)",
+        //     scrollspeed : 120,
+        //     mousescrollstep: 60
+        // });
+    });
+
+
+	</script>
+<!-- <script> -->
+<!-- //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+//   ga('create', 'UA-67302990-1', 'auto');
+//   ga('send', 'pageview'); -->
+
+// <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67302990-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67302990-3');
+</script>
+
+<!-- </script> -->
+	<script src="js/classie.js"></script>
+	<script src="js/svganimations2.js"></script>
+</body>
+</html>
