@@ -44,12 +44,8 @@ var animateHTML = function() {
 };
 
 window.onload = function() {
-  //  alert(navigator.userAgent);
-  if (navigator.userAgent.indexOf("Firefox") > 0) {
-    // if (mainSwitch.checked) {
-    //   console.log("visible");
-    // }
-  }
+  animateHTML().init();
+  
 };
 
 $(document).ready(function() {
@@ -136,7 +132,7 @@ $(document).ready(function() {
 });
 
 document.querySelector("#switch").addEventListener("click", function(event) {
-  console.log(mainSwitch.checked);
+  
 });
 
 document.addEventListener("DOMContentLoaded", function(event) {
