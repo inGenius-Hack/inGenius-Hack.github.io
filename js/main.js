@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var ingeniuscontainer = document.getElementById("main");
   var gghcontainer = document.getElementById("mainggh");
   mainSwitch.checked = false;
-
   mainSwitch.addEventListener("click", function() {
     if (mainSwitch.checked) {
       ingeniuscontainer.style.transform = "translateX(-100%)";
