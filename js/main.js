@@ -45,7 +45,6 @@ var animateHTML = function() {
 
 window.onload = function() {
   animateHTML().init();
-  
 };
 
 $(document).ready(function() {
@@ -131,10 +130,6 @@ $(document).ready(function() {
   });
 });
 
-document.querySelector("#switch").addEventListener("click", function(event) {
-  
-});
-
 document.addEventListener("DOMContentLoaded", function(event) {
   var ingeniuscontainer = document.getElementById("main");
   var gghcontainer = document.getElementById("mainggh");
@@ -169,6 +164,108 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     }
   });
+
+  document.querySelector(".ggh-p").addEventListener("click", function() {
+    console.log("clicked!");
+    if (!mainSwitch.checked) {
+      ingeniuscontainer.style.transform = "translateX(-100%)";
+      ingeniuscontainer.style.transition = "all 1s";
+      gghcontainer.style.transform = "translateX(0)";
+      gghcontainer.style.transition = "all 1s";
+      gghcontainer.classList.remove("fade-out");
+      ingeniuscontainer.classList.remove("fade-in");
+      gghcontainer.classList.add("fade-in");
+      ingeniuscontainer.classList.add("fade-out");
+      gghcontainer.style.transition = "all 1s";
+      gghcontainer.style.display = "block";
+      ingeniuscontainer.style.display = "block";
+      if (navigator.userAgent.indexOf("Firefox") > 0) {
+        gghSwitchText.style.marginTop = "-55px";
+      }
+      mainSwitch.checked = true;
+      $(".ig-img img").toggleClass("hidden");
+      $("#white-in").toggleClass("white-in");
+      $("#blue-genius").toggleClass("blue-genius");
+      $("#white-girl").toggleClass("white-girl");
+      $("#yellow-geeks").toggleClass("yellow-geeks");
+      $(".ggh-img img").toggleClass("hidden");
+    }
+  });
+
+  document.querySelector(".ig-p").addEventListener("click", function() {
+    if (mainSwitch.checked) {
+      gghcontainer.style.transform = "translateX(100%)";
+      gghcontainer.style.transition = "all 1s left";
+      ingeniuscontainer.style.transform = "translateX(0)";
+      gghcontainer.classList.remove("fade-in");
+      ingeniuscontainer.classList.remove("fade-out");
+      gghcontainer.classList.add("fade-out");
+      ingeniuscontainer.classList.add("fade-in");
+      if (navigator.userAgent.indexOf("Firefox") > 0) {
+        gghSwitchText.style.marginTop = "-75px";
+      }
+      mainSwitch.checked = false;
+      $(".ig-img img").toggleClass("hidden");
+      $("#white-in").toggleClass("white-in");
+      $("#blue-genius").toggleClass("blue-genius");
+      $("#white-girl").toggleClass("white-girl");
+      $("#yellow-geeks").toggleClass("yellow-geeks");
+      $(".ggh-img img").toggleClass("hidden");
+    }
+  });
+
+  document
+    .querySelector("#ggh-img-toggle")
+    .addEventListener("click", function() {
+      console.log("clicked!");
+      if (!mainSwitch.checked) {
+        ingeniuscontainer.style.transform = "translateX(-100%)";
+        ingeniuscontainer.style.transition = "all 1s";
+        gghcontainer.style.transform = "translateX(0)";
+        gghcontainer.style.transition = "all 1s";
+        gghcontainer.classList.remove("fade-out");
+        ingeniuscontainer.classList.remove("fade-in");
+        gghcontainer.classList.add("fade-in");
+        ingeniuscontainer.classList.add("fade-out");
+        gghcontainer.style.transition = "all 1s";
+        gghcontainer.style.display = "block";
+        ingeniuscontainer.style.display = "block";
+        if (navigator.userAgent.indexOf("Firefox") > 0) {
+          gghSwitchText.style.marginTop = "-55px";
+        }
+        mainSwitch.checked = true;
+        $(".ig-img img").toggleClass("hidden");
+        $("#white-in").toggleClass("white-in");
+        $("#blue-genius").toggleClass("blue-genius");
+        $("#white-girl").toggleClass("white-girl");
+        $("#yellow-geeks").toggleClass("yellow-geeks");
+        $(".ggh-img img").toggleClass("hidden");
+      }
+    });
+
+  document
+    .querySelector("#ig-img-toggle")
+    .addEventListener("click", function() {
+      if (mainSwitch.checked) {
+        gghcontainer.style.transform = "translateX(100%)";
+        gghcontainer.style.transition = "all 1s left";
+        ingeniuscontainer.style.transform = "translateX(0)";
+        gghcontainer.classList.remove("fade-in");
+        ingeniuscontainer.classList.remove("fade-out");
+        gghcontainer.classList.add("fade-out");
+        ingeniuscontainer.classList.add("fade-in");
+        if (navigator.userAgent.indexOf("Firefox") > 0) {
+          gghSwitchText.style.marginTop = "-75px";
+        }
+        mainSwitch.checked = false;
+        $(".ig-img img").toggleClass("hidden");
+        $("#white-in").toggleClass("white-in");
+        $("#blue-genius").toggleClass("blue-genius");
+        $("#white-girl").toggleClass("white-girl");
+        $("#yellow-geeks").toggleClass("yellow-geeks");
+        $(".ggh-img img").toggleClass("hidden");
+      }
+    });
 });
 
 // Accordion
