@@ -1439,7 +1439,7 @@ h1 {
 @supports (-moz-appearance: none) {
   .ggh-p {
     margin-top: -75px;
-    margin-right: -275px;
+    margin-right: -210px;
   }
 }
 
