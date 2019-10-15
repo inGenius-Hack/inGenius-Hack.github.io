@@ -133,7 +133,7 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function(event) {
   var ingeniuscontainer = document.getElementById("main");
   var gghcontainer = document.getElementById("mainggh");
- 
+
   mainSwitch.checked = false;
   gghcontainer.classList.add("ggh-visuallyhidden");
   mainSwitch.addEventListener("click", function() {
@@ -149,12 +149,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 20);
         setTimeout(function() {
           ingeniuscontainer.classList.add("ig-visuallyhidden");
-         
         }, 20);
         setTimeout(function() {
           ingeniuscontainer.classList.add("main-hidden");
         }, 700);
-
+      }
     } else if (!mainSwitch.checked) {
       if (navigator.userAgent.indexOf("Firefox") > 0) {
         gghSwitchText.style.marginTop = "-75px";
