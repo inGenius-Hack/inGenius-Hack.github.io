@@ -133,33 +133,69 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function(event) {
   var ingeniuscontainer = document.getElementById("main");
   var gghcontainer = document.getElementById("mainggh");
+  // gghcontainer.style.display = "none";
   mainSwitch.checked = false;
+  gghcontainer.classList.add("ggh-visuallyhidden");
   mainSwitch.addEventListener("click", function() {
     if (mainSwitch.checked) {
-      ingeniuscontainer.style.transform = "translateX(-100%)";
-      ingeniuscontainer.style.transition = "all 1s";
-      gghcontainer.style.transform = "translateX(0)";
-      gghcontainer.style.transition = "all 1s";
-      gghcontainer.classList.remove("fade-out");
-      ingeniuscontainer.classList.remove("fade-in");
-      gghcontainer.classList.add("fade-in");
-      ingeniuscontainer.classList.add("fade-out");
-      gghcontainer.style.transition = "all 1s";
-      gghcontainer.style.display = "block";
-      ingeniuscontainer.style.display = "block";
+      // ingeniuscontainer.style.transform = "translateX(-100%)";
+      // ingeniuscontainer.style.transition = "all 1s";
+      // gghcontainer.style.transform = "translateX(0)";
+      // gghcontainer.style.transition = "all 1s";
+      // gghcontainer.classList.remove("fade-out");
+      // ingeniuscontainer.classList.remove("fade-in");
+      // gghcontainer.classList.add("fade-in");
+      // ingeniuscontainer.classList.add("fade-out");
+      // gghcontainer.style.transition = "all 1s";
+      // gghcontainer.style.display = "block";
+      // ingeniuscontainer.style.display = "block";
       if (navigator.userAgent.indexOf("Firefox") > 0) {
         gghSwitchText.style.marginTop = "-55px";
       }
+      if (gghcontainer.classList.contains("main-hidden")) {
+        gghcontainer.classList.remove("main-hidden");
+
+        setTimeout(function() {
+          gghcontainer.classList.remove("ggh-visuallyhidden");
+        }, 20);
+        setTimeout(function() {
+          ingeniuscontainer.classList.add("ig-visuallyhidden");
+          // ingeniuscontainer.classList.add("main-hidden");
+        }, 20);
+        setTimeout(function() {
+          ingeniuscontainer.classList.add("main-hidden");
+        }, 700);
+
+        // ingeniuscontainer.classList.add("main-hidden");
+        // ingeniuscontainer.classList.add("ig-visuallyhidden");
+      }
     } else if (!mainSwitch.checked) {
-      gghcontainer.style.transform = "translateX(100%)";
-      gghcontainer.style.transition = "all 1s left";
-      ingeniuscontainer.style.transform = "translateX(0)";
-      gghcontainer.classList.remove("fade-in");
-      ingeniuscontainer.classList.remove("fade-out");
-      gghcontainer.classList.add("fade-out");
-      ingeniuscontainer.classList.add("fade-in");
+      // gghcontainer.style.transform = "translateX(100%)";
+      // gghcontainer.style.transition = "all 1s left";
+      // ingeniuscontainer.style.transform = "translateX(0)";
+      // gghcontainer.classList.remove("fade-in");
+      // ingeniuscontainer.classList.remove("fade-out");
+      // gghcontainer.classList.add("fade-out");
+      // ingeniuscontainer.classList.add("fade-in");
+      console.log("else if (!mainSwitch.checked)");
+
       if (navigator.userAgent.indexOf("Firefox") > 0) {
         gghSwitchText.style.marginTop = "-75px";
+      }
+      if (ingeniuscontainer.classList.contains("main-hidden")) {
+        console.log("if ig main hidden)");
+        ingeniuscontainer.classList.remove("main-hidden");
+
+        setTimeout(function() {
+          ingeniuscontainer.classList.remove("ig-visuallyhidden");
+        }, 20);
+        setTimeout(function() {
+          gghcontainer.classList.add("ggh-visuallyhidden");
+          // gghcontainer.classList.add("main-hidden");
+        }, 20);
+        setTimeout(function() {
+          gghcontainer.classList.add("main-hidden");
+        }, 700);
       }
     }
   });
