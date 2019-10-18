@@ -136,6 +136,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   mainSwitch.checked = false;
   gghcontainer.classList.add("ggh-visuallyhidden");
+  ingeniuscontainer.classList.add("fade-in");
+  gghcontainer.classList.add("fade-out");
   mainSwitch.addEventListener("click", function() {
     if (mainSwitch.checked) {
       if (navigator.userAgent.indexOf("Firefox") > 0) {
@@ -145,9 +147,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         gghcontainer.classList.remove("main-hidden");
 
         setTimeout(function() {
+          gghcontainer.classList.remove("fade-out");
+          gghcontainer.classList.add("fade-in");
           gghcontainer.classList.remove("ggh-visuallyhidden");
         }, 20);
         setTimeout(function() {
+          ingeniuscontainer.classList.remove("fade-in");
+          ingeniuscontainer.classList.add("fade-out");
           ingeniuscontainer.classList.add("ig-visuallyhidden");
         }, 20);
         setTimeout(function() {
@@ -163,13 +169,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         ingeniuscontainer.classList.remove("main-hidden");
 
         setTimeout(function() {
+          ingeniuscontainer.classList.remove("fade-out");
+          ingeniuscontainer.classList.add("fade-in");
           ingeniuscontainer.classList.remove("ig-visuallyhidden");
         }, 20);
         setTimeout(function() {
+          gghcontainer.classList.remove("fade-in");
+          gghcontainer.classList.add("fade-out");
           gghcontainer.classList.add("ggh-visuallyhidden");
         }, 20);
         setTimeout(function() {
           gghcontainer.classList.add("main-hidden");
+         
         }, 700);
       }
     }
@@ -189,9 +200,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       gghcontainer.classList.remove("main-hidden");
 
       setTimeout(function() {
+        gghcontainer.classList.remove("fade-out");
+        gghcontainer.classList.add("fade-in");
         gghcontainer.classList.remove("ggh-visuallyhidden");
       }, 20);
       setTimeout(function() {
+        ingeniuscontainer.classList.remove("fade-in");
+        ingeniuscontainer.classList.add("fade-out");
         ingeniuscontainer.classList.add("ig-visuallyhidden");
       }, 20);
       setTimeout(function() {
@@ -210,9 +225,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       ingeniuscontainer.classList.remove("main-hidden");
 
       setTimeout(function() {
+        ingeniuscontainer.classList.remove("fade-out");
+        ingeniuscontainer.classList.add("fade-in");
         ingeniuscontainer.classList.remove("ig-visuallyhidden");
       }, 20);
       setTimeout(function() {
+        gghcontainer.classList.remove("fade-in");
+        gghcontainer.classList.add("fade-out");
         gghcontainer.classList.add("ggh-visuallyhidden");
       }, 20);
       setTimeout(function() {
@@ -233,9 +252,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         gghcontainer.classList.remove("main-hidden");
 
         setTimeout(function() {
+          gghcontainer.classList.remove("fade-out");
+          gghcontainer.classList.add("fade-in");
           gghcontainer.classList.remove("ggh-visuallyhidden");
         }, 20);
         setTimeout(function() {
+          ingeniuscontainer.classList.remove("fade-in");
+          ingeniuscontainer.classList.add("fade-out");
           ingeniuscontainer.classList.add("ig-visuallyhidden");
         }, 20);
         setTimeout(function() {
@@ -256,9 +279,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         ingeniuscontainer.classList.remove("main-hidden");
 
         setTimeout(function() {
+          ingeniuscontainer.classList.remove("fade-out");
+          ingeniuscontainer.classList.add("fade-in");
           ingeniuscontainer.classList.remove("ig-visuallyhidden");
         }, 20);
         setTimeout(function() {
+          gghcontainer.classList.remove("fade-in");
+          gghcontainer.classList.add("fade-out");
           gghcontainer.classList.add("ggh-visuallyhidden");
         }, 20);
         setTimeout(function() {
