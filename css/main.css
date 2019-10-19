@@ -1198,6 +1198,12 @@ section {
   color: rgb(150, 150, 150);
 }
 
+.click-to-toggle {
+  text-align: center;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+}
+
 @media (max-width: 860px) {
   .ig-p,
   .ggh-p {
@@ -1332,7 +1338,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 100px;
   background-color: #000;
   z-index: 100;
 }

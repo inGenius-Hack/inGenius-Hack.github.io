@@ -133,13 +133,16 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function(event) {
   var ingeniuscontainer = document.getElementById("main");
   var gghcontainer = document.getElementById("mainggh");
-
+  var toggleText = document.getElementById("toggle-text");
+  toggleText.style.color = "#E9C650";
   mainSwitch.checked = false;
   gghcontainer.classList.add("ggh-visuallyhidden");
   ingeniuscontainer.classList.add("fade-in");
   gghcontainer.classList.add("fade-out");
   mainSwitch.addEventListener("click", function() {
     if (mainSwitch.checked) {
+      toggleText.innerHTML = "INGENIUS";
+      toggleText.style.color = "#28A8E0";
       if (navigator.userAgent.indexOf("Firefox") > 0) {
         gghSwitchText.style.marginTop = "-55px";
       }
@@ -161,6 +164,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 700);
       }
     } else if (!mainSwitch.checked) {
+      toggleText.innerHTML = "GIRLGEEKS";
+      toggleText.style.color = "#E9C650";
       if (navigator.userAgent.indexOf("Firefox") > 0) {
         gghSwitchText.style.marginTop = "-75px";
       }
@@ -198,7 +203,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector(".ggh-p").addEventListener("click", function() {
     if (!mainSwitch.checked) {
       gghcontainer.classList.remove("main-hidden");
-
+      toggleText.innerHTML = "INGENIUS";
+      toggleText.style.color = "#28A8E0";
       setTimeout(function() {
         gghcontainer.classList.remove("fade-out");
         gghcontainer.classList.add("fade-in");
@@ -221,6 +227,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   document.querySelector(".ig-p").addEventListener("click", function() {
+    toggleText.innerHTML = "GIRLGEEKS";
+    toggleText.style.color = "#E9C650";
     if (mainSwitch.checked) {
       ingeniuscontainer.classList.remove("main-hidden");
 
@@ -249,6 +257,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     .querySelector("#ggh-img-toggle")
     .addEventListener("click", function() {
       if (!mainSwitch.checked) {
+        toggleText.innerHTML = "INGENIUS";
+        toggleText.style.color = "#28A8E0";
         gghcontainer.classList.remove("main-hidden");
 
         setTimeout(function() {
@@ -276,6 +286,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     .querySelector("#ig-img-toggle")
     .addEventListener("click", function() {
       if (mainSwitch.checked) {
+        toggleText.innerHTML = "GIRLGEEKS";
+        toggleText.style.color = "#E9C650";
         ingeniuscontainer.classList.remove("main-hidden");
 
         setTimeout(function() {
