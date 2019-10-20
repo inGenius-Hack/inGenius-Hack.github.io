@@ -1,10 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Mansalva|Pacifico&display=swap");
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Long+Cang|Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
 
 
 html,
@@ -85,7 +81,7 @@ background-size: cover;
 }
 @media only screen and (min-width:1440px){
   #home-ig-div{
-    margin-top: 70px;
+    margin-top: 50px;
   }
   #ggh-logo{
     height: 300px;
@@ -810,6 +806,7 @@ section {
   #homeggh{
     padding-top: 100px;
   }
+  
 }
 
 @media screen and (min-width: 1024px) {
