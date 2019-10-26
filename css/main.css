@@ -87,6 +87,11 @@ background-size: cover;
     height: 300px;
     width: 350px;
   }
+
+  #register-dates {
+    margin-top: -100px;
+    padding-bottom: 80px;
+  }
  
 }
 
@@ -676,6 +681,9 @@ section {
   #test {
     font-size: 15px;
   }
+  #register-dates{
+    padding-bottom: 40px;
+  }
 
   #home-ggh-div{
     display: none;
@@ -754,6 +762,16 @@ section {
 @media screen and (max-width: 375px) {
   #test {
     font-size: 16.5px;
+  }
+  #register-dates{
+    margin-top: 70px; 
+    padding-bottom: 40px;
+  }
+  #ingenius-register-link{
+    margin-top: 100px;
+  }
+  #ggh-register-link{
+    margin-top: 100px;
   }
   #date{
     margin-top: 0px;
@@ -1499,6 +1517,12 @@ p {
     margin-top: 0px !important;
   }
 
+  #ingenius-register-link{
+    margin-top: 100px;
+  }
+  #ggh-register-link{
+    margin-top: 100px;
+  }
   #faq h1 {
     margin-top: -50px;
   }
