@@ -408,8 +408,7 @@ section {
 
 @media only screen and (max-width: 1024px) {
   #participate {
-    margin: 0 auto;
-    padding: 10px;
+    margin: auto;
   }
 
   /* #participate h1 {
@@ -647,17 +646,13 @@ section {
   #andggh{
     display: none;
   }
-  #participate{
-    height: 800px;
-  }
+ 
 }
 @media (min-width: 426px) and (max-width: 768px) {
   #home-ggh-div{
     display: none;
   }
-  #participate{
-    height: 1300px;
-  }
+ 
   #date{
     padding-top: 50px;
     font-family: 'Open Sans', sans-serif;
@@ -698,9 +693,8 @@ section {
   #register-dates{
     margin-top: 80px;
   }
-  #participate{
-    height: 1500px;
-  }
+  
+  
   #register-dates{
     padding-bottom: 40px;
   }
@@ -783,9 +777,7 @@ section {
   #test {
     font-size: 16.5px;
   }
-  #participate{
-    height: 1500px;
-  }
+  
   #register-dates{
     margin-top: 70px; 
     padding-bottom: 40px;
