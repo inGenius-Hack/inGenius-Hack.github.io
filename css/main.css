@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+
+#code-text{
+  font-size: 22px;
+}
 #home{
   height: auto;
   
@@ -113,6 +117,10 @@ background-size: cover;
 
   }
   #aboutggh {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #sponsors{
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -546,6 +554,11 @@ section {
   #datecol{
     margin-top:50px;
   }
+  #test2 {
+    font-size: 25px;
+  }
+
+
   #date{
     
     font-family: 'Open Sans', sans-serif;
@@ -613,14 +626,14 @@ section {
   }
 
   #compsoc-div-1 {
-    font-size: 15px;
+    font-size: 22px;
   }
   #compsoc-div-2 {
-    font-size: 15px;
+    font-size: 22px;
   }
 
   #test2 {
-    font-size: 19px;
+    font-size: 20px;
   }
   #ggj-contact-us {
     font-size: 18px;
@@ -671,16 +684,16 @@ section {
     font-size: 15px;
   }
   #compsoc-div-1 {
-    font-size: 15px;
+    font-size: 22px;
   }
   #compsoc-div-2 {
-    font-size: 15px;
+    font-size: 22px;
   }
   #map-div {
     width: 95%;
   }
   #test2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   
@@ -703,14 +716,14 @@ section {
     display: none;
   }
   #compsoc-div-1 {
-    font-size: 15px;
+    font-size: 22px;
   }
   
   #compsoc-div-2 {
-    font-size: 15px;
+    font-size: 22px;
   }
   #test2 {
-    font-size: 18.5px;
+    font-size: 20px;
   }
   
   #acm-text {
@@ -783,10 +796,10 @@ section {
     padding-bottom: 40px;
   }
   #ingenius-register-link{
-    margin-top: 100px;
+    margin-top: 60px;
   }
   #ggh-register-link{
-    margin-top: 100px;
+    margin-top: 60px;
   }
   #date{
     margin-top: 0px;
@@ -805,13 +818,13 @@ section {
 
   
   #compsoc-div-1 {
-    font-size: 15px;
+    font-size: 22px;
   }
   #compsoc-div-2 {
-    font-size: 15px;
+    font-size: 22px;
   }
   #test2 {
-    font-size: 21px;
+    font-size: 20px;
   }
   #acm-text {
     width: 95%;
@@ -1471,7 +1484,7 @@ ul {
 }
 
 #sponsors {
-  height: 600px;
+  height: auto;
 }
 p {
   text-align: left;
@@ -1547,10 +1560,10 @@ p {
   }
 
   #ingenius-register-link{
-    margin-top: 100px;
+    margin-top: 60px;
   }
   #ggh-register-link{
-    margin-top: 100px;
+    margin-top: 60px;
   }
   #faq h1 {
     margin-top: -50px;
